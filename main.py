@@ -10,7 +10,7 @@ can_show = False
 image_to_show = None
 selected_image = None
 
-accepted_extensions = ["jpg", "png", "bmp", "raw", "nef"]
+accepted_extensions = ["jpg", "png", "bmp"] 
 
 def selectPath():
     global img_path
@@ -50,7 +50,7 @@ def selectOutputPath():
     output_dir_label.grid(row=1,column=0,sticky="ew")
 
 
-def updateImage(arg=None):
+def updateImage(arg=None):      #todo cleanup globals
     nothing_burger = arg
     global slider_starting_x
     global slider_starting_y
@@ -109,7 +109,7 @@ def updateImage(arg=None):
         image_to_show = ctk.CTkLabel(root, image=selected_image, text="")
         image_to_show.grid(column=0, row=2, padx=10, pady=5,columnspan=3, sticky='ew')
 
-
+# todo, fix sliders causing program not to work after clearing img
 def clearImage():
     try:
         global image_to_show
