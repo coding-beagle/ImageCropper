@@ -2,4 +2,6 @@
 
 Mainly used as a utility tool for my custom pocket watch project, but hey ho it might be useful for another person one day.
 
-Install by downloading the file in 
+Install as an application by downloading the .msi in dist\
+
+Or just download main.py and use it from there.
